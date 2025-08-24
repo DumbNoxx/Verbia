@@ -18,7 +18,7 @@ You can visit the live site here: [https://verbia-quote.vercel.app](https://verb
 
 ## Author
 
-Verbia
+Dylan
 
 ## Keywords
 
