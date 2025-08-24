@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+:root {
+  --bg-color: oklch(0 0.0099 0 / 83.63%);
+  --bg-container-color: oklch(0.1261 0 6.35);
+  --text-color: oklch(0.9688 0.0025 140.82);
+  --border-color: oklch(0.8234 0.0025 140.82 / 51.77%);
+  --box-shadow-1: 0px 5px 9px 1px rgba(205, 205, 205, 0.15);
+  --webkit-shadow: 0px 5px 9px 1px rgba(205, 205, 205, 0.15);
+  --moz-shadow: 0px 5px 9px 1px rgba(205, 205, 205, 0.15);
+  --hover-link: oklch(0.9006 0 32.82 / 79.5%);
+  --text-link: oklch(0.5 0.148 256.24);
+  --hover-button: oklch(0.2033 0 140.82);
+  --background-button-theme: oklch(0.8976 0 6.35 / 79.79%);
+  --text-color-button-theme: oklch(0.0816 0 6.35);
+  --hover-button-toggle: oklch(0.8531 0.0247 310.24);
+
+  font-synthesis: none;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html[theme="light"] {
+  --bg-color: oklch(0.8976 0 6.35 / 79.79%);
+  --bg-container-color: oklch(0.8933 0.0247 310.24);
+  --text-color: oklch(0.0816 0 6.35);
+  --border-color: oklch(0.1855 0 6.35);
+  --box-shadow-1: 0px 5px 9px 1px rgba(0, 0, 0, 0.15);
+  --webkit-shadow: 0px 5px 9px 1px rgba(0, 0, 0, 0.15);
+  --moz-shadow: 0px 5px 9px 1px rgba(0, 0, 0, 0.15);
+  --hover-link: oklch(0.6176 0.2516 32.82 / 79.5%);
+  --text-link: oklch(0.0667 0 141.88);
+  --hover-button: oklch(0.8531 0.0247 310.24);
+  --background-button-theme: oklch(0 0.0099 0 / 83.63%);
+  --text-color-button-theme: oklch(0.9688 0.0025 140.82);
+  --hover-button-toggle: oklch(0.2033 0 140.82);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+html {
+  font-family: 'Anonymous Pro', monospace;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+
+body,
+html {
+  margin: 0;
+  width: 100%;
+  color-scheme: dark light;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.2s, color 0.2s;
+  height: 100vh;
+}

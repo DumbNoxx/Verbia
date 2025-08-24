@@ -1,0 +1,139 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 2em;
+  background-color: var(--bg-color);
+  padding: 1em
+}
+
+#quote-box {
+  padding: 3em;
+  background-color: var(--bg-container-color);
+  border: 2px solid var(--border-color);
+  max-width: 40em;
+  margin: 0 auto;
+  border-radius: 0.5em;
+  text-align: center;
+  color: var(--text-color);
+  box-shadow: var(--box-shadow-1);
+  -webkit-box-shadow: var(--webkit-shadow);
+  -moz-box-shadow: var(--moz-shadow);
+  transition: background-color 0.2s, color 0.2s;
+  width: 100%;
+  max-height: 17.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+  & #text {
+    font-size: 1.6em;
+    font-weight: 600;
+
+    &.new-quote {
+      animation: fade-out .5s ease-out forwards;
+    }
+  }
+
+  & #author {
+    font-style: italic;
+    font-weight: 500;
+
+    &.new-quote {
+      animation: fade-out .5s ease-out forwards;
+    }
+  }
+}
+
+.container-nav {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  justify-content: center;
+
+  & #new-quote {
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: .6em;
+    border-radius: .5em;
+    transition: .1s ease, background-color 0.2s, color 0.2s;
+
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--hover-button);
+    }
+  }
+
+  & #tweet-quote {
+    color: var(--text-link);
+    transition: .1s ease, color 0.2s;
+
+    &:hover {
+      color: var(--hover-link)
+    }
+  }
+}
+
+
+.toggle-button {
+  background-color: var(--background-button-theme);
+  color: var(--text-color-button-theme);
+  width: 5em;
+  border: none;
+  border-radius: .7em;
+  height: 2.5em;
+  position: absolute;
+  right: 2%;
+  bottom: 6%;
+  transition: background-color 0.2s, color 0.2s;
+
+  &:hover {
+    background-color: var(--hover-button-toggle);
+    cursor: pointer;
+  }
+}
+
+footer {
+  max-width: 30em;
+  margin: 0 auto;
+  margin-top: 3em;
+  margin-bottom: -8em;
+  transition: color 0.2s;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+@media (width <=35em) {
+  #quote-box {
+    min-height: 10em;
+
+    & #text {
+      font-size: 0.7em;
+    }
+
+    & #author {
+      font-size: 0.8em;
+    }
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
+
+}
