@@ -49,10 +49,11 @@ function App() {
         <div id="quote-box">
           <p id="text" ref={refQuote}>"{text?.length > 150 ? text?.slice(0, 150) + '...' : text}"</p>
           <p id="author" ref={refAuthor}>- <span>{author}</span></p>
-        </div>
-        <div className="container-nav">
           <button onClick={changeQuote} id="new-quote">New Quote</button>
           <a href={`https://twitter.com/intent/tweet?text=${text}`} target='_blank' id="tweet-quote">Tweet Quote</a>
+        </div>
+        <div className="container-nav">
+
         </div>
         <button onClick={toggleTheme} className="toggle-button">{theme === "dark" ? "light" : "dark"}</button>
         <footer>

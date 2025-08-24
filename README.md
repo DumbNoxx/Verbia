@@ -1,12 +1,25 @@
-# React + Vite
+# Verbia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Discover a curated collection of powerful and inspiring quotes on Verbia. Find wisdom, motivation, and new perspectives daily.
 
-Currently, two official plugins are available:
+## About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Verbia is a simple and elegant web application designed to provide you with a daily dose of inspiration through a carefully selected collection of quotes. Whether you're looking for motivation, wisdom, or a new perspective, Verbia has something for you.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+*   **Curated Quotes:** A collection of powerful and inspiring quotes.
+*   **Daily Inspiration:** New quotes to discover every day.
+*   **Minimalist Design:** A clean and focused reading experience.
+
+## Website
+
+You can visit the live site here: [https://verbia-quote.vercel.app](https://verbia-quote.vercel.app)
+
+## Author
+
+Verbia
+
+## Keywords
+
+quotes, inspiration, motivation, wisdom, famous quotes, daily quotes, Verbia
