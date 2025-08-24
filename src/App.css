@@ -122,6 +122,7 @@ footer {
 @media (width <=35em) {
   #quote-box {
     min-height: 10em;
+    max-height: 12.5em;
 
     & #text {
       font-size: 0.7em;
