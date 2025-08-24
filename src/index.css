@@ -14,7 +14,7 @@
   --background-button-theme: oklch(0.8976 0 6.35 / 79.79%);
   --text-color-button-theme: oklch(0.0816 0 6.35);
   --hover-button-toggle: oklch(0.8531 0.0247 310.24);
-
+  background-color: black;
   font-synthesis: none;
 
   text-rendering: optimizeLegibility;

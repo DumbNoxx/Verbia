@@ -8,7 +8,11 @@ const url = "https://dummyjson.com/quotes"
 
 function App() {
   const [text, setText] = useState(null);
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState(() => {
+    const savedTheme = window.localStorage.getItem('theme');
+    return savedTheme !== null ? savedTheme : 'dark';
+  });
+
   const [author, setAuthor] = useState(null);
   const refQuote = useRef(null);
   const refAuthor = useRef(null);
@@ -34,6 +38,7 @@ function App() {
 
 
   useEffect(() => {
+    window.localStorage.setItem('theme', theme);
     document.documentElement.setAttribute("theme", theme)
   }, [theme])
 
